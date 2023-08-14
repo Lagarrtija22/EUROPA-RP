@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>EUROPA RP</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            height: 60px;
+            margin-right: 10px;
+        }
+        .title {
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            position: relative;
+        }
+        .right-logo {
+            height: 60px;
+            margin-left: auto;
+        }
+        .main-content {
+            background-color: rgb(35, 35, 35);
+            color: rgb(136, 136, 136);
+            text-align: center;
+            padding: 20px;
+            height: 20px;
+        }
+        .main-content2 {
+            background-color: rgb(35, 35, 35);
+            color: rgb(136, 136, 136);
+            text-align: center;
+            padding: 20px;
+            height: 20px;
+        }
+        /* Media Queries para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo, .right-logo {
+                margin: 0 auto 10px auto;
+            }
+            #main-content-help{
+                width: 70px;
+                text-align: center;
+                flex-direction: column;
+            }
+            .main-content{
+                flex-direction: column;
+                text-align: center;
+            }
+            #mensaje-de-bienvenida{
+                flex-direction: column;
+                text-align: center;
+                height: 100px;
+            }
+            .main-content2{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="europa_logo.png" alt="Logo EUROPA RP" class="logo">
+        <p class="title">EUROPA</p>
+        <img src="Logo europa x espana.jpg" alt="Logo Unión europea x espana" class="right-logo">
+    </div>  
+    <div class="main-content">
+        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; margin-top: -20px; width: 280px; ">  
+    </div>
+    <div style="background-color: rgb(136, 136, 136); text-align: center; height: 120px; margin-top: -16px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); ">
+        <h1 style="top: 20px; font-size: 20px;">Bienvenidos a europa:</h1>
+        <p  id="mensaje-de-bienvenida" style="margin-top: 25px;"> Este es un servidor basado en el rolplay si alguien no sabe que significa el roleplay es: "" esta basado en espana con sus funciones y con servicios publicos reales tales como la policia: EL CNP, la guardia civil: LA GC, los bomberos de madrid: EMS..., en el podras obtar a las oposiciones de distintas facciones legales o ilegales tu decides unete ya.</p> 
+    </div>
+    <div class="main-content2">
+        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; margin-top: -20px; width: 280px; ">  
+    </div>
+</body>
+</html>
