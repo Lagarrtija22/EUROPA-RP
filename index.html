@@ -11,6 +11,7 @@
             background-color: black;
             color: white;
             display: flex;
+            justify-content: space-between; /* Alineación a la derecha */
             align-items: center;
             padding: 10px;
         }
@@ -42,7 +43,37 @@
             padding: 20px;
             height: 20px;
         }
-        /* Media Queries para pantallas más pequeñas */
+        .links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .link-item {
+            text-decoration: none;
+            color: white;
+            font-family: 'Courier New', monospace; /* Cambio de fuente */
+            font-size: 13px;
+            margin-left: 5px;
+        }
+        .right-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+        }
+        #mesajito{
+            background-color: rgb(100, 100, 100); text-align: center; height: 375px; margin-top: -16px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);
+        }
+        #h1-comunicado-edu {
+            font-size: 25px;
+        }
+        #h1-comunicado-Ivan {
+            font-size: 25px;
+        }
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
@@ -51,23 +82,41 @@
             .logo, .right-logo {
                 margin: 0 auto 10px auto;
             }
-            #main-content-help{
+            #main-content-help {
                 width: 70px;
                 text-align: center;
                 flex-direction: column;
             }
-            .main-content{
+            .main-content {
                 flex-direction: column;
                 text-align: center;
             }
-            #mensaje-de-bienvenida{
+            #mensaje-de-bienvenida {
                 flex-direction: column;
                 text-align: center;
                 height: 100px;
             }
-            .main-content2{
+            .main-content2 {
                 flex-direction: column;
                 text-align: center;
+            }
+            .links {
+                justify-content: center;
+                margin-top: 5px;
+            }
+            .link-item {
+                margin: 0 5px;
+            }
+            .right-links {
+                margin-left: 0;
+                margin-top: 5px;
+                justify-content: center;
+            }
+            #mesajito {
+                height: 200px;
+            }
+            #mesajito-logo-europa-lineas{
+                margin-top: -10px;
             }
         }
     </style>
@@ -76,18 +125,25 @@
     <div class="header">
         <img src="europa_logo.png" alt="Logo EUROPA RP" class="logo">
         <p class="title">EUROPA</p>
-        <img src="Logo europa x espana.jpg" alt="Logo Unión europea x espana" class="right-logo">
+        <div class="right-links">
+            <a href="Normativa-Discord.html" class="link-item">Normativa Discord</a>
+            <a href="Normativa-rp.html" class="link-item">Normativa rp</a>
+            <img src="Logo europa x espana.jpg" alt="Logo Unión europea x espana" class="right-logo">
+        </div>
     </div>  
     <div class="main-content">
-        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; margin-top: -20px; width: 280px; ">  
+        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; margin-top: -20px; width: 280px; ">
     </div>
-    <div style="background-color: rgb(100, 100, 100); text-align: center; height: 120px; margin-top: -16px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0); ">
+    <div id="mesajito">
         <h1 style="top: 20px; font-size: 20px;">Bienvenidos a europa:</h1>
-        <p  id="mensaje-de-bienvenida" style="margin-top: 25px;"> Este es un servidor basado en el rolplay si alguien no sabe que significa el roleplay es: "" esta basado en espana con sus funciones y con servicios publicos reales tales como la policia: EL CNP, la guardia civil: LA GC, los bomberos de madrid: EMS..., en el podras obtar a las oposiciones de distintas facciones legales o ilegales tu decides unete ya.</p> 
+        <p  id="mensaje-de-bienvenida" style="margin-top: 25px;"> -------------------------------------------------------------------------------------------EN REFORMAS -------------------------------------------------------------------------------------------</p> 
+        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; width: 280px; " id="mesajito-logo-europa-lineas">
+        <h1>Comunicados Oficiales de los dioses de Europa</h1>
+        <h1 id="h1-comunicado-edu">Comunicado Oficial Edu</h1>
+        <p3>Hola soy Edu y solo os tengo que decir que soy vuestro dios y jefe :)</p3>
+        <h1 id="h1-comunicado-Ivan">Comunicado Oficial Edu</h1>
+        <p3>Hola soy Iván y solo os tengo que decir que soy vuestro dios y jefe :)</p3>
     </div>
-    <div class="main-content2">
-        <img src="europa_logo_con_lineas.png" alt="Logo EUROPA RP con lineas" style="height: 55px; margin-top: -20px; width: 280px; ">  
-    </div>
-    <link>
 </body>
 </html>
+
